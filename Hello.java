@@ -3,17 +3,19 @@ import java.util.Scanner;
 public class Hello{
      public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("enter a number: ");
-        long n = scanner.nextLong();
-        long fact = 1; 
-        for(long i = 1; i<=n; i++){
-            fact = fact * i;
+        System.out.print("enter a 3 number: ");
+        int n = scanner.nextInt();
+        String string = String.valueOf(n);
+        if(string.charAt(0) == string.charAt(2)){
+            System.out.println(" palindrome");
+        }else{
+            System.out.println("not palindrome");
         }
-        System.out.println("the factorial of " + n + " is " + fact);
         scanner.close();
     }
 
-}
+    }
+
    
 
 
