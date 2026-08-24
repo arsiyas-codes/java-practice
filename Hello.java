@@ -1,18 +1,26 @@
+import java.util.Scanner;
 
 public class Hello{
-
-       static long Addition(long N){
-        long Add = 0; 
-        for(int i = 0 ; i <= N ; i++){
-            Add = Add + i;
+     public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter a number: ");
+        long n = scanner.nextLong();
+        for(long i = 1; i<=10; i++){
+            long j = n * i;
+            System.out.println( n + " * " + i + " = " + j);
         }
-        return Add;
+        scanner.close();
     }
-    public static void main(String[] args){
-        long result = Addition(10);
-        System.out.println("the added number is " + result);
-    }        
+
 }
+   
+
+
+
+
+       
+        
+
 
 
 
