@@ -5,10 +5,11 @@ public class Hello{
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter a number: ");
         long n = scanner.nextLong();
-        for(long i = 1; i<=10; i++){
-            long j = n * i;
-            System.out.println( n + " * " + i + " = " + j);
+        long fact = 1; 
+        for(long i = 1; i<=n; i++){
+            fact = fact * i;
         }
+        System.out.println("the factorial of " + n + " is " + fact);
         scanner.close();
     }
 
