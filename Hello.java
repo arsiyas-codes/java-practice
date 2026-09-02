@@ -1,20 +1,29 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Hello{
      public static void main(String[] args){
-        //Scanner scanner = new Scanner(System.in);
-        //System.out.print("enter your age: ");
-        //int Age = scanner.nextInt();
-        for(int i = 1; i <=50;i++){
-            if(i % 7 == 0){
-                System.out.println(i + " ");
-            }
+        int n = 3;
+        int[]num =new int [n];
+        Scanner scanner = new Scanner(System.in);
+        for(int i = 0;i<n;i++){
+            System.out.print("enter a number: ");
+            num[i] = scanner.nextInt();
         }
-        
-        //scanner.close();
+            int largest;
+            if(num[0]> num[1] && num[0]> num[2] ){
+                largest = num[0];
+                System.out.println("largest number: " + largest);
+            }if(num[1]> num[0] && num[1]> num[2] ){
+                largest = num[1];
+                System.out.println("largest number: " + largest);
+            }if(num[2]> num[0] && num[2]> num[1] ){
+                largest = num[2];
+                System.out.println("largest number: " + largest);
             }
-}   
-       
+             scanner.close();
+        }
+    }   
+
 
         
 
