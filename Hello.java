@@ -1,27 +1,25 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Hello{
      public static void main(String[] args){
-        //Scanner scanner = new Scanner(System.in);
-     int[]numbers = {2,5,7,8};
-     int largest = Integer.MIN_VALUE;
-     for(int i = 0 ; i < numbers.length; i++){
-        if(numbers[i]>largest){
-                largest = numbers[i];
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter an number: ");
+        int n = scanner.nextInt();
+        int sum = 0;
+        for(int i = 1 ; i <= n-1; i++){
+                if (n % i == 0){
+                        System.out.println("the number divisible by: " + i);
+                        sum = sum + i;
+                }
         }
-     } 
-     System.out.println("Largest = " + largest);
-
-     int secondLargest = Integer.MIN_VALUE;
-     for(int i = 0 ; i < numbers.length; i++){
-        if(numbers[i]!=largest &&  numbers[i] > secondLargest){
-                secondLargest=numbers[i];
+        System.out.println("the sum : "+ sum);
+        if(sum == n){
+                System.out.println(n + " perfect number ");
+        }else{
+                System.out.println(n + " not perfect number ");
         }
-     } 
-     System.out.println("second Largest = " + secondLargest);
-
-
-
+        
+                scanner.close();
 
 }
 }   
