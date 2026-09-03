@@ -12,6 +12,17 @@ public class Hello{
      } 
      System.out.println("Largest = " + largest);
 
+     int secondLargest = Integer.MIN_VALUE;
+     for(int i = 0 ; i < numbers.length; i++){
+        if(numbers[i]!=largest &&  numbers[i] > secondLargest){
+                secondLargest=numbers[i];
+        }
+     } 
+     System.out.println("second Largest = " + secondLargest);
+
+
+
+
 }
 }   
 
