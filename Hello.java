@@ -1,24 +1,24 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Hello{
      public static void main(String[] args){
-        int n = 3;
-        int[]num =new int [n];
-        Scanner scanner = new Scanner(System.in);
-        for(int i = 0;i<n;i++){
-            System.out.print("enter a number: ");
-            num[i] = scanner.nextInt();
+        //Scanner scanner = new Scanner(System.in);
+     int[]numbers = {2,5,7,8};
+     int largest = Integer.MIN_VALUE;
+     for(int i = 0 ; i < numbers.length; i++){
+        if(numbers[i]>largest){
+                largest = numbers[i];
         }
-            int largest = num[0];
-            for(int i = 0 ; i < num.length; i++){
-                if(num[i] > largest){
-                largest = num[i];
-                }
-            }
-            System.out.println("largest number: " + largest);
-             scanner.close();
-        }
-    }   
+     } 
+     System.out.println("Largest = " + largest);
+
+}
+}   
+
+
+//git add Hello.java .
+//git commit -m " program"
+//git push
 
 
         
