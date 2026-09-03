@@ -1,25 +1,29 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Hello{
-     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("enter an number: ");
-        int n = scanner.nextInt();
-        int sum = 0;
-        for(int i = 1 ; i <= n-1; i++){
-                if (n % i == 0){
-                        System.out.println("the number divisible by: " + i);
-                        sum = sum + i;
+        static void countPositive(int[]arr){
+                //int count = 0;
+                for(int i = 0 ; i<arr.length; i++){
+                        if(arr[i]>0){
+                                System.out.println(arr[i]);;
+                        }
                 }
+                //return count; 
         }
-        System.out.println("the sum : "+ sum);
-        if(sum == n){
-                System.out.println(n + " perfect number ");
-        }else{
-                System.out.println(n + " not perfect number ");
-        }
+     public static void main(String[] args){
+        int[]number = {1,-9,-7,-4,7};
+        //int result =
+        countPositive(number);
+        //System.out.println("the positive numbers are : " + result);
+                
+
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.print("enter an number: ");
+        //int n = scanner.nextInt();
         
-                scanner.close();
+        
+        
+                //scanner.close();
 
 }
 }   
