@@ -1,20 +1,24 @@
 //import java.util.Scanner;
 
 public class Hello{
-        static int countVowels(String str){
-                String vowel = "AEIOUaeiou";
-                int count = 0;
+        static  String Builderreverse(String str){
+                //String vowel = "AEIOUaeiou";
+                String reverse = "";
                 for(int i = 0 ; i<str.length(); i++){
-                        char ch = str.charAt(i);
-                        if(vowel.contains(String.valueOf(ch))){
-                                count++;
-                        }
-                }
-                return count; 
+                        char ch = str.charAt(str.length()-1-i);
+                        reverse=reverse+ch;
+                        //char ch = str.charAt(i);
+                        //System.out.println(str.charAt(str.length()-1));
+
+                                //reverse++;      
+                                //return reverse; 
+                } 
+                return reverse;
         }
+                //return reverse; 
      public static void main(String[] args){
         String word = "arsiya";
-        int result =countVowels(word);
+        String result =Builderreverse(word);
         System.out.println(result);
      
         //System.out.println("the positive numbers are : " + result);
