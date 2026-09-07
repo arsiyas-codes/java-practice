@@ -1,26 +1,23 @@
 //import java.util.Scanner;
 
 public class Hello{
-        static  String Builderreverse(String str){
-                //String vowel = "AEIOUaeiou";
-                String reverse = "";
-                for(int i = 0 ; i<str.length(); i++){
-                        char ch = str.charAt(str.length()-1-i);
-                        reverse=reverse+ch;
-                        //char ch = str.charAt(i);
-                        //System.out.println(str.charAt(str.length()-1));
-
-                                //reverse++;      
-                                //return reverse; 
+        static int countWord(String sentence,String word ){
+                int count =0;
+                String[]words = sentence.split(" ");
+                for(int i = 0 ; i<words.length; i++){
+                        if(words[i].equals(word)){
+                                count++;
+                        }
                 } 
-                return reverse;
+                 return count; 
         }
-                //return reverse; 
+                
      public static void main(String[] args){
-        String word = "arsiya";
-        String result =Builderreverse(word);
+        String sentence = " the cat sat on the mat";
+        int result =countWord(sentence,"the");
         System.out.println(result);
-     
+}
+}     
         //System.out.println("the positive numbers are : " + result);
                 
 
@@ -31,10 +28,7 @@ public class Hello{
         
         
                 //scanner.close();
-
-}
-}   
-
+   
 
 //git add Hello.java .
 //git commit -m " program"
