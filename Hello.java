@@ -1,19 +1,22 @@
 //import java.util.Scanner;
 
 public class Hello{
-        static void countPositive(int[]arr){
-                //int count = 0;
-                for(int i = 0 ; i<arr.length; i++){
-                        if(arr[i]>0){
-                                System.out.println(arr[i]);;
+        static int countVowels(String str){
+                String vowel = "AEIOUaeiou";
+                int count = 0;
+                for(int i = 0 ; i<str.length(); i++){
+                        char ch = str.charAt(i);
+                        if(vowel.contains(String.valueOf(ch))){
+                                count++;
                         }
                 }
-                //return count; 
+                return count; 
         }
      public static void main(String[] args){
-        int[]number = {1,-9,-7,-4,7};
-        //int result =
-        countPositive(number);
+        String word = "arsiya";
+        int result =countVowels(word);
+        System.out.println(result);
+     
         //System.out.println("the positive numbers are : " + result);
                 
 
