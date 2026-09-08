@@ -1,20 +1,19 @@
 //import java.util.Scanner;
 
 public class Hello{
-        static int countWord(String sentence,String word ){
-                int count =0;
-                String[]words = sentence.split(" ");
-                for(int i = 0 ; i<words.length; i++){
-                        if(words[i].equals(word)){
-                                count++;
+        static int findLargest(int[]arr){
+                int largest =arr[0];
+                for(int i = 0; i <arr.length;i++){
+                        if(arr[i]>largest){
+                                largest = arr[i];
                         }
                 } 
-                 return count; 
+                 return largest; 
         }
                 
      public static void main(String[] args){
-        String sentence = " the cat sat on the mat";
-        int result =countWord(sentence,"the");
+        int[]lar = {3,10,5,9,8};
+        int result = findLargest(lar);
         System.out.println(result);
 }
 }     
