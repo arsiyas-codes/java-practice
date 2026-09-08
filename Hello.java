@@ -1,19 +1,23 @@
 //import java.util.Scanner;
+import java.util.Arrays;
 
 public class Hello{
-        static int findLargest(int[]arr){
-                int largest =arr[0];
-                for(int i = 0; i <arr.length;i++){
-                        if(arr[i]>largest){
-                                largest = arr[i];
-                        }
+        static String findSame(String str1, String str2){
+                char[]arr1 = str1.toLowerCase().replace(" ","").toCharArray();
+                Arrays.sort(arr1);
+                char[]arr2 = str2.toLowerCase().replace(" ","").toCharArray();
+                Arrays.sort(arr2);
+                if(Arrays.equals(arr1,arr2)){
+                        return "true";
+                }else{
+                        return "false";
                 } 
-                 return largest; 
         }
                 
      public static void main(String[] args){
-        int[]lar = {3,10,5,9,8};
-        int result = findLargest(lar);
+        String sr = "Listen";
+        String sr2 = "vioLEnt";
+        String result = findSame(sr,sr2);
         System.out.println(result);
 }
 }     
