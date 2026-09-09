@@ -1,24 +1,21 @@
 //import java.util.Scanner;
-import java.util.Arrays;
-
+//import java.util.Arrays;
 public class Hello{
-        static String findSame(String str1, String str2){
-                char[]arr1 = str1.toLowerCase().replace(" ","").toCharArray();
-                Arrays.sort(arr1);
-                char[]arr2 = str2.toLowerCase().replace(" ","").toCharArray();
-                Arrays.sort(arr2);
-                if(Arrays.equals(arr1,arr2)){
-                        return "true";
-                }else{
-                        return "false";
+        static String removeDuplicate(String str){
+                String result = "";
+                for(int i = 0;i <str.length();i++){
+                        char ch = str.charAt(i);
+                               if(!result.contains(String.valueOf(ch))){
+                                        result = result + ch;
+                }//else{
+                     //   return "false";
                 } 
-        }
-                
+                return result;
+ }               
      public static void main(String[] args){
-        String sr = "Listen";
-        String sr2 = "vioLEnt";
-        String result = findSame(sr,sr2);
-        System.out.println(result);
+        String str = "Programming";
+        String result1 = removeDuplicate(str);
+        System.out.println(result1);
 }
 }     
         //System.out.println("the positive numbers are : " + result);
