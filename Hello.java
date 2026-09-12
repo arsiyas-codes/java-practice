@@ -1,23 +1,29 @@
 //import java.util.Scanner;
-//import java.util.Arrays;
+//import java.util.HashMap;
 public class Hello{
-        static String removeDuplicate(String str){
-                String result = "";
+        static void Frequency(String str){
+                //HashMap<Character,Integer>map=new HashMap<>();
                 for(int i = 0;i <str.length();i++){
                         char ch = str.charAt(i);
-                               if(!result.contains(String.valueOf(ch))){
-                                        result = result + ch;
-                }//else{
-                     //   return "false";
-                } 
-                return result;
- }               
+                               if(str.indexOf(ch)!=i){
+                                continue;
+                }
+                int count = 0;
+                for(int j = 0; j < str.length();j++){
+                        if(str.charAt(j) == ch){
+                                count++;
+                        }
+                }
+                System.out.println(ch + "= " + count);
+        } 
+}
      public static void main(String[] args){
         String str = "Programming";
-        String result1 = removeDuplicate(str);
-        System.out.println(result1);
+        Frequency(str);
+     }
 }
-}     
+
+ 
         //System.out.println("the positive numbers are : " + result);
                 
 
