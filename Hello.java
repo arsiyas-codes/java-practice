@@ -1,21 +1,23 @@
 //import java.util.Scanner;
 //import java.util.HashMap;
 public class Hello{
-        static void Frequencyint(int [] arr){
+        static void Search(int [] arr){
                 //HashMap<Character,Integer>map=new HashMap<>();
+                int count = 0;
+                int n = 1;
+                System.out.print("indices: ");
                 for(int i = 0;i<arr.length;i++){
-                        int count = 0;
-                        for(int j = 0 ; j<arr.length;j++){
-                                if(arr[i]==arr[j]){
+                                if(arr[i]==n){
                                         count++;
+                                        System.out.print(i+" ");
                                 }
-                        }
-                        System.out.println(arr[i]+" -- "+ count);
                 }
+                System.out.println();
+                System.out.println(n+" occurs "+count);
         } 
      public static void main(String[] args){
       int[]rev = {1,1,2,2,3,4,5};
-        Frequencyint(rev);
+        Search(rev);
 }
 }
         //System.out.println("the positive numbers are : " + result);
