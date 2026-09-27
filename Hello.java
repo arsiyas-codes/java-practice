@@ -3,15 +3,13 @@
  public class Hello{
         private static void Selectionsort(int [] arr){
                 for(int i = 0; i <arr.length-1;i++){
-                        int min = i;
-                        for(int j = i+1; j < arr.length;j++){
-                                if(arr[min]>arr[j]){
-                                        min = j;
+                        for(int j = 0; j < arr.length-i-1;j++){
+                                if(arr[j]>arr[j+1]){
+                                int temp = arr[j];
+                                arr[j]=arr[j+1];
+                                arr[j+1]=temp;
                                 }
                         }
-                        int temp = arr[i];
-                        arr[i]=arr[min];
-                        arr[min]=temp;
                 }
         }
 public static void main(String[] args){
