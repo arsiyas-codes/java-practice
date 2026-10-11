@@ -1,25 +1,29 @@
 //import java.util.Scanner;
 //import java.util.HashMap;
- public class Hello{
-        private static void Selectionsort(int [] arr){
-                for(int i = 0; i <arr.length-1;i++){
-                        for(int j = 0; j < arr.length-i-1;j++){
-                                if(arr[j]>arr[j+1]){
-                                int temp = arr[j];
-                                arr[j]=arr[j+1];
-                                arr[j+1]=temp;
-                                }
-                        }
-                }
-        }
-public static void main(String[] args){
-      int arr[] = {5,2,9,1,5,6};
-      Selectionsort(arr);
-      for(int i : arr){
-        System.out.println(i);
-      }
-}        
+class Student{
+        String name;
+        int age;
+        int mark;
 }
+        public class Hello{
+        public static void main(String[] args){
+                Student s1 = new Student();
+                s1.name = "arsiya";
+                s1.age = 18;
+                s1.mark = 100;
+                System.out.println("the student name: " + s1.name); 
+                System.out.println("the student age: " + s1.age);
+                System.out.println("the student mark: " + s1.mark);
+        }               
+}       
+
+ 
+ 
+        //private static void Selectionsort(int [] arr){
+//public static void main(String[] args){
+      
+//}        
+
  //HashMap<Character,Integer>map=new HashMap<>();
 
 // System.out.println();
