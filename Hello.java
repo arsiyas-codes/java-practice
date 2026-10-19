@@ -1,26 +1,38 @@
 //import java.util.Scanner;
 //import java.util.HashMap;
-class Car{
-        String brand;
-        int price;
-        String colour;
+class Calculator{
+        String add;
+        String sub;
+        String mul;
+        String div;
+        int add(int a, int b){
+                int sum = a + b;
+                System.out.println("sum = " + sum);
+                return sum;
+        }
+        int sub(int a, int b){
+                int diff = a - b;
+                System.out.println("sum = " + diff);
+                return diff;
+        }
+        int mul(int a, int b){
+                int into = a * b;
+                System.out.println("sum = " + into);
+                return into;
+        }
+        int div(int a, int b){
+                int division = a / b;
+                System.out.println("sum = " + division);
+                return division;
+        }
 }
         public class Hello{
         public static void main(String[] args){
-                Car car1 = new Car();
-                car1.brand = "BMW";
-                car1.colour = "black";
-                car1.price = 5000000;
-                Car car2 = new Car();
-                car2.brand = "audi";
-                car2.colour = "white";
-                car2.price = 7000000;
-                System.out.println("the CAR name: " + car1.brand); 
-                System.out.println("the CAR PRICE: " + car1.price);
-                System.out.println("the CAR COLOUR: " + car1.colour);
-                System.out.println("the CAR name: " + car2.brand); 
-                System.out.println("the CAR PRICE: " + car2.price);
-                System.out.println("the CAR COLOUR: " + car2.colour);
+               Calculator c = new Calculator();
+               c.add(10,5);
+               c.sub(10,5);
+               c.div(10,5);
+               c.mul(10,5);
         }               
 }       
 
@@ -65,4 +77,4 @@ class Car{
 
        
         
-   
+    
